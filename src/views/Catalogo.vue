@@ -15,9 +15,9 @@ export default {
                 {
                     url: 'https://res.cloudinary.com/christiancode99/image/upload/v1612711704/tapiceria-soto/8e287c8e-5205-41fd-9e93-f1dd9905b9f1_f9nd9q.jpg',
                     nombre: 'MODELO 3,2,1 + SHAYLOM',
-                    precio: 1700,
                     descripcion: {
                         color: 'A escoger',
+                        precio: 1700,
                         tamaño: {
                             triple: {
                                 width: 80,

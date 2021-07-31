@@ -5,6 +5,7 @@
     <v-main class="pt-15">
       <router-view></router-view>
     </v-main>
+    <FooterVue />
   </v-app>
 </template>
 
@@ -12,6 +13,7 @@
 import NavbarVue from './components/Navbar.vue';
 import { provide, ref } from '@vue/composition-api'
 import NavigationDrawerVue from './components/NavigationDrawer.vue';
+import FooterVue from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -24,7 +26,8 @@ export default {
   },
   components: {
     NavbarVue,
-    NavigationDrawerVue
+    NavigationDrawerVue,
+    FooterVue
   },
 
   data: () => ({
@@ -38,6 +41,10 @@ export default {
 
 *{
   font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #FFFFFF;
 }
 
 </style>

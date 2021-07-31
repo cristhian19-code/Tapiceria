@@ -12,7 +12,7 @@
           class="text-center"
           cols="12"
         >
-          <h1 class="display-2 mb-4">
+          <h1 class="display-3 mb-4">
             Tapiceria de sofas en general
           </h1>
           <!-- <h4 class="subheading">
@@ -22,15 +22,15 @@
       </v-row>
     </v-parallax>
     
-    <v-layout wrap class="py-10">
+    <v-layout wrap class="my-10 px-6">
       <v-flex xs12 md5 d-flex justify-center align-center>
-        <img class="img-catalogo" height="300" src="https://images.pexels.com/photos/3965534/pexels-photo-3965534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        <img class="img-catalogo" height="310" src="https://images.pexels.com/photos/3965534/pexels-photo-3965534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
       </v-flex>
       <v-flex xs12 md7 d-flex justify-center>
         <div class="px-7 mt-sm-6 mt-md-0">
           <h1 class="display-2 font-mdi-font-weight-medium">Catálogo</h1>
-          <p class="my-5 font-font-weight-light">Aquí comienza tu texto. Puedes hacer clic en este punto y empezar a escribir. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque.</p>
-          <v-btn :to="{name: 'Catalogo'}" x-large elevation="" color="black" dark outlined>VER CATALOGO</v-btn>
+          <p>Podra visualizar nuestra gran gama de muebles con los precios mas baratos en el mercado. Ademas que podras seleccionar el color de la tela o cuebro del mueble a elegir</p>
+          <v-btn :to="{name: 'Catalogo'}" x-large class="mt-3" color="black" dark outlined>VER CATALOGO</v-btn>
         </div>
       </v-flex>
     </v-layout>
@@ -52,11 +52,18 @@ export default {
 </script>
 <style>
   .img-catalogo{
-    border-radius: 10px;
+    border-radius: 5px;
+    cursor: pointer;
   }
 
   .img-catalogo:hover{
     transition: .5s;
-    transform: scale(1.1);
+    transform: scale(1.06);
+  }
+
+  @media(max-width: 700px){
+    .display-3{
+      font-size: 40px;
+    }
   }
 </style>

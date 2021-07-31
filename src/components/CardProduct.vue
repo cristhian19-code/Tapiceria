@@ -1,5 +1,5 @@
 <template>
-    <v-layout wrap class="px-3 py-7 my-4">
+    <v-layout wrap class="px-3 py-7 my-5">
         <v-flex d-flex justify-center align-center xs12 md5 :class="`order-md-${ index % 2 == 0 ? 1 : 0}`" class=" mt-sm-5 mt-md-0 order-sm-0" >
             <img class="catalogo" height="300" width="400" :src="url" alt="">
         </v-flex>
@@ -44,6 +44,12 @@ export default {
 <style>
 .catalogo{
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.catalogo:hover{
+    transition: .5s;
+    transform: scale(1.04);
 }
 
 ul{
